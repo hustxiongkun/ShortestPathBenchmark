@@ -39,6 +39,7 @@
 | 配对堆 (pairing heap)        |              |
 | 排名配对堆 (rank pairing heap) |              |
 | 桶队列 (bucket queue)        |              |
+| 双向搜索                      |              |
 
 ### Bellman-Ford
 
@@ -53,6 +54,7 @@
 | 配置                  | 描述   |
 | ------------------- | ---- |
 | 打破平局 (breaking tie) |      |
+| 双向搜索                |      |
 
 ## 性能
 
