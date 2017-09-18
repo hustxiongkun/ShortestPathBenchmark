@@ -4,20 +4,21 @@
 
 | 名称           | 算法类型                              | 链接                                       | 测试ID |
 | ------------ | --------------------------------- | ---------------------------------------- | ---- |
-| CoinOR.lemon | Dijkstra                          | http://lemon.cs.elte.hu/trac/lemon       | 01   |
-| CoinOR.cgc   | Dijkstra                          | https://projects.coin-or.org/Cgc         | 02   |
-| CppUtilibs   | Dijkstra, A*, Bellman-Ford, Floyd | https://github.com/Zhouxing-Su/CppUtilibs/blob/master/algorithm/Graph.h | 03   |
+| CoinOR.lemon | Dijkstra                          | http://lemon.cs.elte.hu/trac/lemon       | A    |
+| CoinOR.cgc   | Dijkstra                          | https://projects.coin-or.org/Cgc         | B    |
+| CppUtilibs   | Dijkstra, A*, Bellman-Ford, Floyd | https://github.com/Zhouxing-Su/CppUtilibs/blob/master/algorithm/Graph.h | C    |
 |              | A*                                |                                          |      |
 |              | Bellman-Ford                      |                                          |      |
 |              | Floyd                             |                                          |      |
-|              |                                   |                                          |      |
-|              |                                   |                                          |      |
-|              |                                   |                                          |      |
-|              |                                   |                                          |      |
-|              |                                   |                                          |      |
-|              |                                   |                                          |      |
-|              |                                   |                                          |      |
-|              |                                   |                                          |      |
+|              | Dijkstra                          | https://github.com/andrewhayward/dijkstra/blob/master/graph.js | D    |
+|              | Dijkstra                          | https://github.com/vterron/dijkstra/blob/master/dijkstra.py | E    |
+|              | Dijkstra                          | https://github.com/graphhopper/graphhopper/blob/master/core/src/main/java/com/graphhopper/routing/Dijkstra.java | F    |
+|              | A*                                | https://github.com/graphhopper/graphhopper/blob/master/core/src/main/java/com/graphhopper/routing/AStar.java | G    |
+|              | Dijkstra                          | https://github.com/Professorq/dijkstra/blob/master/algorithm.go | H    |
+|              | Dijkstra                          | https://github.com/ibaaj/dijkstra-cartography/blob/master/flights/main.cpp | I    |
+|              | Dijkstra                          | https://github.com/mapa17/Dijkstra/blob/master/dijkstra.c | J    |
+|              | Dijkstra                          | https://github.com/thinkphp/dijkstra/blob/master/dijkstra.c     https://github.com/thinkphp/dijkstra/blob/master/algorithm-dijkstra.cpp | K    |
+|              | Dijkstra                          | https://github.com/fedelebron/Dijkstra/blob/master/dijkstra.c | L    |
 |              |                                   |                                          |      |
 
 
@@ -43,27 +44,33 @@
 
 ### Dijkstra
 
-| 测试ID\配置 | D1           | D2           | D3           | D4           | D5           | D6   | D7   | D8   |
-| ------- | ------------ | ------------ | ------------ | ------------ | ------------ | ---- | ---- | ---- |
-| 01      | $\checkmark$ |              |              |              |              |      |      |      |
-| 02      |              | $\checkmark$ |              |              |              |      |      |      |
-| 03      |              |              | $\checkmark$ |              |              |      |      |      |
-| 04      |              |              |              | $\checkmark$ |              |      |      |      |
-| 05      |              |              |              |              | $\checkmark$ |      |      |      |
+| 测试ID\配置 | D.N          | D.BAH        | D.BOH        | D.FH         | D.PH         | D.RPH | D.BQ | D.BS |
+| ------- | ------------ | ------------ | ------------ | ------------ | ------------ | ----- | ---- | ---- |
+| A       | $\checkmark$ |              |              |              |              |       |      |      |
+| B       |              | $\checkmark$ |              |              |              |       |      |      |
+| C       |              |              | $\checkmark$ |              |              |       |      |      |
+| D       |              |              |              | $\checkmark$ |              |       |      |      |
+| E       |              |              |              |              | $\checkmark$ |       |      |      |
+| F       |              |              |              |              |              |       |      |      |
+| H       |              |              |              |              |              |       |      |      |
+| I       |              |              |              |              |              |       |      |      |
+| J       |              |              |              |              |              |       |      |      |
+| K       |              |              |              |              |              |       |      |      |
+| L       |              |              |              |              |              |       |      |      |
 
 ### A*
 
-| 测试ID\配置 | D1           | D2           | D3           | D4   | D5   | D6   | D7   | D8   | A9   |
-| ------- | ------------ | ------------ | ------------ | ---- | ---- | ---- | ---- | ---- | ---- |
-| 03      | $\checkmark$ |              |              |      |      |      |      |      |      |
-| 04      |              | $\checkmark$ |              |      |      |      |      |      |      |
-| 05      |              |              | $\checkmark$ |      |      |      |      |      |      |
+| 测试ID\配置 | D.N          | D.BAH        | D.BOH        | D.FH | D.PH | D.RPH | D.BQ | D.BS | A.BT |
+| ------- | ------------ | ------------ | ------------ | ---- | ---- | ----- | ---- | ---- | ---- |
+| C       | $\checkmark$ |              |              |      |      |       |      |      |      |
+| G       |              | $\checkmark$ |              |      |      |       |      |      |      |
+|         |              |              | $\checkmark$ |      |      |       |      |      |      |
 
 ### Bellman-Ford
 
-| 测试ID\配置 | B1           | B2           | D3           |
+| 测试ID\配置 | B.Q          | B.SLF        | B.LLL        |
 | ------- | ------------ | ------------ | ------------ |
-| 03      | $\checkmark$ |              |              |
-| 04      |              | $\checkmark$ |              |
-| 05      |              |              | $\checkmark$ |
+|         | $\checkmark$ |              |              |
+|         |              | $\checkmark$ |              |
+|         |              |              | $\checkmark$ |
 
