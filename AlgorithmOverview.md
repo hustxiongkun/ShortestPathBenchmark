@@ -7,19 +7,16 @@
 | CoinOR.lemon | Dijkstra                          | http://lemon.cs.elte.hu/trac/lemon       | A    |
 | CoinOR.cgc   | Dijkstra                          | https://projects.coin-or.org/Cgc         | B    |
 | CppUtilibs   | Dijkstra, A*, Bellman-Ford, Floyd | https://github.com/Zhouxing-Su/CppUtilibs/blob/master/algorithm/Graph.h | C    |
-|              | A*                                |                                          |      |
-|              | Bellman-Ford                      |                                          |      |
-|              | Floyd                             |                                          |      |
-|              | Dijkstra                          | https://github.com/andrewhayward/dijkstra/blob/master/graph.js | D    |
-|              | Dijkstra                          | https://github.com/vterron/dijkstra/blob/master/dijkstra.py | E    |
-|              | Dijkstra                          | https://github.com/graphhopper/graphhopper/blob/master/core/src/main/java/com/graphhopper/routing/Dijkstra.java | F    |
-|              | A*                                | https://github.com/graphhopper/graphhopper/blob/master/core/src/main/java/com/graphhopper/routing/AStar.java | G    |
-|              | Dijkstra                          | https://github.com/Professorq/dijkstra/blob/master/algorithm.go | H    |
-|              | Dijkstra                          | https://github.com/ibaaj/dijkstra-cartography/blob/master/flights/main.cpp | I    |
-|              | Dijkstra                          | https://github.com/mapa17/Dijkstra/blob/master/dijkstra.c | J    |
-|              | Dijkstra                          | https://github.com/thinkphp/dijkstra/blob/master/dijkstra.c     https://github.com/thinkphp/dijkstra/blob/master/algorithm-dijkstra.cpp | K    |
-|              | Dijkstra                          | https://github.com/fedelebron/Dijkstra/blob/master/dijkstra.c | L    |
-|              |                                   |                                          |      |
+|              | A*                                | https://github.com/denisov-v/ShortestPath/blob/master/ShortestPath/astar.h | D    |
+|              | A*                                | https://github.com/ActiveState/code/blob/master/recipes/C++/577457_Astar_Shortest_Path_Algorithm/recipe-577457.cpp | E    |
+|              | Bellman-Ford                      | https://github.com/DLily0129/Data-Structure/blob/master/ShortestPathBellmanFord/ShortestPathBellmanFord/ShortestPathBellmanFord.h | F    |
+|              | Bellman-Ford                      | https://github.com/heyitstanyado/BellmanFord/blob/master/BellmanFord.c | G    |
+|              | Bellman-Ford                      | http://theoryofprogramming.com/bellman-ford-algorithm-using-cpp-stl/ | H    |
+|              | Floyd                             | https://github.com/sysilion/ShortestPath/blob/master/src/main.c | I    |
+|              | Dijkstra                          | https://github.com/ibaaj/dijkstra-cartography/blob/master/flights/main.cpp | J    |
+|              | Dijkstra                          | https://github.com/dragonslayerx/Competitive-Programming-Repository/blob/master/src/dijkstra_using_priority_queue.cpp | K    |
+|              | Dijkstra                          | https://www.quora.com/What-is-the-most-simple-efficient-C++-code-for-Dijkstras-shortest-path-algorithm | L    |
+|              | Dijkstra                          | https://github.com/fedelebron/Dijkstra/blob/master/dijkstra.c | M    |
 
 
 
