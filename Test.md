@@ -25,3 +25,11 @@ github, google查找算法
 前面那个停止条件就是我可以扩展完所有节点停止, 或者扩展到指定点(终点)停止, 或者扩展到某些特殊节点停止(比如双向搜索另一侧已扩展的节点), 或者扩展前k个节点就停止, 等等
 
 后面那个跳数, 主要是bellman-ford这种只能算一个单源点最短路, 不能想a*或者dijkstra那样到达终点时提前退出, 可能在不同算例上性能波动会比较大
+
+
+
+
+
+lemon_ShortestPath:
+
+http://lemon.cs.elte.hu/pub/tutorial/a00010.html#sec_shortest_paths
