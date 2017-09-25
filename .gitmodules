@@ -1,0 +1,3 @@
+[submodule "thirdparty/CppUtilibs@C"]
+	path = thirdparty/CppUtilibs@C
+	url = https://github.com/Zhouxing-Su/CppUtilibs.git
