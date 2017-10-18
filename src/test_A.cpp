@@ -26,36 +26,47 @@ void test_A(const InputData& data) {
 	LengthMap length(G);
 	for (int i = 0; i < data.adjList.size(); i++) {
 		for (int j = 0; j < data.adjList[i].size(); j++) {
-			Arc a = G.addArc(nodes[i], nodes[data.adjList[i][j].first]);
-			length[a] = data.adjList[i][j].second;
+			Arc a = G.addArc(nodes[i], nodes[data.adjList[i][j].sinkVertex]);
+			length[a] = data.adjList[i][j].arcWeight;
 		}
 	}
 	//set source, target
-	Node s, t;
-	s = nodes[data.source];
-	t = nodes[data.target];
+	Node source, target;
+	source = nodes[data.source];
+	target = nodes[data.target];
 
 	Timer timer;
 	
 	//single to single
+	timer.start();
 	Dijkstra<ListDigraph,LengthMap> dijkstra(G, length);
 	dijkstra.init();
-	timer.start();
-	dijkstra.addSource(s);
-	dijkstra.start(t);
+	dijkstra.addSource(source);
+	dijkstra.start(target);
+	Path<ListDigraph> path = dijkstra.path(target);
 	cout << "A single to single used time: " << timer.timeUsed() << endl;
 
 	/*//single to all
 	Dijkstra<ListDigraph, LengthMap> dijkstra(G, length);
 	dijkstra.init();
-	dijkstra.addSource(s);
+	dijkstra.addSource(source);
 	dijkstra.start();
+	vector<Path<ListDigraph>> path;
+	for(int i = 0; i < nodes.size(); i++){
+		if(i == data.source) continue;
+		path[i] = dijkstra.path(nodes[i]);
+	}
 
 	//all to all
 	Dijkstra<ListDigraph, LengthMap> dijkstra(G, length);
+	vector<vector<Path<ListDigraph>>> path;
 	for (int i = 0; i < nodes.size(); i++) {
 		dijkstra.init();
 		dijkstra.addSource(nodes[i]);
 		dijkstra.start();
+		for(int j = 0; j < nodes.size(); j++){
+			if(i == j) continue;
+			path[i][j] = dijkstra.path(nodes[j]);
+		}
 	}*/
 }
